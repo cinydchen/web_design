@@ -1,0 +1,508 @@
+<!doctype html>
+<html lang="en">
+    <head>
+    <meta charset="utf-8">
+    <title></title>
+        
+        <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500&display=swap" rel="stylesheet">
+        
+         <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500&display=swap" rel="stylesheet">
+        
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+        
+        <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
+        
+        
+        
+		<style>
+            
+            body{
+                height: 5000px;
+            }
+            .logo{
+                background-image:url(LOGO2.png);
+                width: 400px;
+                height: 100px;
+                background-repeat: no-repeat;
+                position: absolute;
+                z-index: +1;
+                top: 50px;
+                left: 50px;
+            }
+            
+                .nav{
+				display: inline-block;
+                padding-left: 20px;
+				
+				
+				
+			}
+			.navbar{
+				display: inline-block;
+				vertical-align: top;
+				position: absolute;
+				margin-right: 1px;
+                padding-top: 50px;
+				padding-left: 80px;
+				font-size: 22px;
+				font-family: barlow;
+				letter-spacing: 2.5px;
+				font-weight: 500;
+                text-align:left;
+                left: 67.5%;
+    
+    
+			}
+            
+            	.menu{
+				display: inline-block;
+				color: #FF7E18;
+                padding-left: 20px;
+            }
+            
+                    a{
+				color:#707070;
+			}
+			a:visited{
+				color:#707070;
+			}
+			a:hover{
+				color:#FF7E18;
+			}
+			a:active{
+				color:#FF7E18;
+			}
+                
+                
+            h1{
+                font-family: barlow condensed;
+                font-weight: normal;
+                color:#FF7E18;
+                font-size: 35px;
+                text-align: center;
+                letter-spacing: 2px;
+            
+            }
+            
+            .coff{
+                position: absolute;
+                top: 180px;
+                left: 45%;
+            }
+            b{
+                font-family: barlow;
+                letter-spacing: 2px;
+                color:#707070;
+                font-size: 20px;
+                
+            }
+            
+            span{
+                line-height: 200%;
+                font-family: garamond;
+                letter-spacing: 1px;
+            }
+            
+            .expresso{
+                padding-top: 40px;
+            }
+                
+            .latte, .breve, .americano, .mochaccino{
+                padding-top: 60px;
+            }
+            .coffee1{
+                position: absolute;
+                left: 15%;
+                top: 40%;
+                 width: 17%;
+            }
+            
+            
+            
+              .coffee2{
+                position: absolute;
+                left: 42%;
+                top: 40%;
+                width: 17%;
+            }
+            
+                .coffee3{
+                    position: absolute;
+                left: 70%;
+                top: 40%;
+                width: 15%;
+            }
+            
+            #pic1{
+                background-image:url(coffee.png);
+                width: 100%;
+                height: 600px;
+                position: absolute;
+                top: 800px;
+            }
+            
+            .foc{
+                position: absolute;
+                left: 33%;
+                top: 1500px;
+                line-height: 0%;
+                
+            }
+          
+            .focamain{
+                position:absolute;
+               top:1670px;
+               left: 15%;
+                
+                
+            }
+            .chicken, .cordon, .artichoke, .hawaiian, .eggplant, .tuna, .turkey, .philly{
+                padding-bottom: 60px;
+                
+            }
+            .foca1{
+                width: 45%;
+            }
+            .foca2{
+                position: absolute;
+                left: 80%;
+                top: 0%;
+                width: 45%;
+                
+            }
+            .foca3{
+                width: 45%;
+                position: absolute;
+                left: 160%;
+                top: 0%;
+            }
+            .cheese, .garden, .greek{
+                padding-bottom: 80px;
+            }
+            
+            #pic2{
+                background-image: url(foca.png);
+                width: 100%;
+                height: 700px;
+                position: absolute;
+                top: 2350px;
+            }
+            .wrap{
+                position:absolute;
+                top: 3100px;
+                line-height: 0%;
+                left: 40%;
+            }
+            .wrap1{
+                position: absolute;
+                top:3300px;
+                width: 20%;
+                left: 25%
+            }
+             .blt, .gyro{
+                padding-bottom: 60px;
+            }
+            .panini, .caesar{
+                 padding-bottom: 30px;
+            }
+            
+            .wrap2{
+                position: absolute;
+                top:3300px;
+                width: 20%;
+                left: 60%
+            }
+            
+            #pic3{
+                background-image: url(bread.png);
+                width: 100%;
+                height: 800px;
+                position: absolute;
+                top: 3600px;
+            }
+            .drink{
+                position:absolute;
+                top: 4450px;
+                left: 45%;
+            }
+            
+            .drinks1{
+                position:absolute;
+                top: 4580px;
+                left: 23.2%;
+                text-align: center;
+                width: 50%
+                
+            }
+            
+            .flavor, .fruit, .smoothies, .frappes, .chai{
+                padding-bottom: 60px;
+            }
+            
+            
+            @media only screen and (max-width:700px){
+            /* phone view*/
+            
+    
+		</style>
+        
+        
+        <script>
+             ypos = window.pageYOffset;
+            
+            function parallax(){
+           
+                if(ypos>200){
+                document.getElementById('pic1').style.opacity = "0";
+            }
+            
+        </script>
+    </head>
+	
+    <body>
+         <div class="logo"></div>
+        
+        <div class="navbar" id="mynavbar">
+                <a href="index.html"><div class="nav">HOME</div></a>
+                <a href="menu.html"><div class="menu">MENU</div></a>
+                <a href=""><div class="nav">CONTACT</div></a>
+                </div>
+
+        
+            <div id="maincoffee">
+                <div class="coff"><h1>COFFEE</h1></div>
+                
+                <div class="coffee1">
+                    
+                <div class="coffee">
+                <b>coffee</b><br>
+                <span>Italian<br>
+                        Jamaican Me Crazy<br>
+                        Canan Daigua Blend<br>
+                        Peru La Florida <br>
+                        Jamaican Me Crazy Decaf<br>
+                        Sumatra Decaf<br>
+                        and a special daily flavor.
+                </span>
+                </div>  
+                
+                <div class="expresso">
+                        <b>expresso</b><br>
+                        <span>Darkly roasted Italian coffee</span></div>
+                </div> 
+                
+                <div class="coffee2">
+                    <div class="cappuccino">
+                        <b>cappuccino</b><br>
+                        <span>Espresso with steamed and frothed milk</span>
+                    </div>
+                
+                
+                <div class="latte">
+                        <b>latte</b><br>
+                        <span>Espresso with steamed milk and 
+                                dollop of froth</span>
+                    </div>
+                
+                    
+                     <div class="breve">
+                        <b>breve</b><br>
+                        <span>Latte made with half and half</span>
+                    </div>
+                
+                </div>
+                
+                 <div class="coffee3">
+                    <div class="mocha">
+                        <b>mocha</b><br>
+                        <span>Espresso, torani chocolate, steamed milk, whipped cream</span>
+                    </div>
+                
+                
+                <div class="americano">
+                        <b>americano</b><br>
+                        <span>Espresso with hot water</span>
+                    </div>
+                
+                    
+                     <div class="mochaccino">
+                        <b>mochaccino</b><br>
+                        <span>Espresso, chocolate 1/2 steamed and 1/2 forthed milk</span>
+                    </div>
+                
+                </div>
+                
+                </div> 
+        
+        <div id='pic1' onScroll = "parallax()"></div>
+        
+                    <div class="foca">
+                       <div class="foc"> <h1>FOCACCIAS</h1>
+                        <span>Grilled sandwiches made with sundried tomato and herb focaccia bread.</span></div>
+                        <div class="focamain">
+        
+                        <div class="foca1">
+                    <div class="chicken">
+                        <b>chicken</b><br>
+                        <span>Chicken, tomato, mozzarella, and pesto</span>
+                    </div>
+                
+                
+                        <div class="cordon">
+                        <b>chicken cordon bleu</b><br>
+                        <span>Chicken, ham, swill, and honey mustard</span>
+                    </div>
+                
+                    
+                     <div class="artichoke">
+                        <b>artichoke</b><br>
+                        <span>Artichokes, mushrooms, red peppers, 
+                            provolone, and roasted red pepper sauce</span>
+                    </div>
+                            
+                   <div class="hawaiian">
+                        <b>hawaiian</b><br>
+                        <span>Ham, pineapple, swiss, and honey mustard</span>
+                    </div>
+                            
+                </div>
+                        
+                         <div class="foca2">
+                    <div class="eggplant">
+                        <b>eggplant</b><br>
+                        <span>Eggplant, mushrooms, red peppers, provolone, and roasted red pepper sauce</span>
+                    </div>
+                
+                
+                        <div class="tuna">
+                        <b>tuna melt</b><br>
+                        <span>Tuna, tomato, and swiss</span>
+                    </div>
+                
+                    
+                     <div class="turkey">
+                        <b>turkey melt</b><br>
+                        <span>Turkey, tomato, mozzarella, and pesto</span>
+                    </div>
+                            
+                   <div class="philly">
+                        <b>philly</b><br>
+                        <span>Roast beef, grilled onions, mozzarella, and roasted red pepper sauce</span>
+                    </div>
+                        
+                           
+                </div>
+                            
+                             <div class="foca3">
+                    <div class="cheese">
+                        <b>cheeseburger</b><br>
+                        <span>Ground chuck, tomato, onions, american, 
+swiss, and roasted red pepper sauce</span>
+                    </div>
+                
+                
+                        <div class="garden">
+                        <b>garden burger</b><br>
+                        <span>Garden burger, red peppers, tomato, swiss 
+and roasted red pepper sauce</span>
+                    </div>
+                
+                    
+                     <div class="greek">
+                        <b>greek</b><br>
+                        <span>Choice of chicken, beef, or egplant, tomato, 
+onion, cucumber, feta, and tzatziki sauce.</span>
+                    </div>
+                            
+                
+                           
+                </div>
+                        </div></div>
+                        
+                        
+                <div id='pic2'></div>
+                        
+                            <div class="wraps">
+                       <div class="wrap"> <h1>WRAPS</h1>
+                        <span>Comes with a sundried tomato basil wrap</span></div>
+                        <div class="wrapmain">
+        
+                        <div class="wrap1">
+                    <div class="panini">
+                        <b>panini wrap</b><br>
+                        <span>Capicollo ham, swiss, mushrooms, red peppers, 
+mixed greens, and roasted red pepper sauce</span>
+                    </div>
+                
+                
+                        <div class="caesar">
+                        <b>chicken caesar salad wrap</b><br>
+                        <span>Hand tossed wrap fill</span>
+                    </div>
+                
+                    
+                            
+                </div>
+                            <div class="wrap2">
+                             <div class="blt">
+                        <b>turkey blt wrap</b><br>
+                        <span>Turkey, bacon, lettuce, tomato</span>
+                    </div>
+                            
+                   <div class="gyro">
+                        <b>gyro</b><br>
+                        <span>Pita bread with chicken or beef, tomato, 
+onion, cucumber, feta, and tzatziki sauce.</span>
+                    </div>
+                        
+                        </div>
+                        </div>
+                        </div>
+        
+        <div id='pic3'></div>
+        
+         <div class="drinks">
+                       <div class="drink"> <h1>DRINKS</h1>
+                       </div>
+                        <div class="drinksmain">
+        
+                        <div class="drinks1">
+                    <div class="flavor">
+                        <b>flavor shots</b><br>
+                        <span>amaretto, butter pecan, caramel, chocolate bianco, chocolate milano, cinnamon, coconut, 
+creame de menthe, english toffee, french vanilla, ginger spice, hazelnut, honey vanilla, irish cream,
+ maple, orgeat almond, pappermint pumpkin spice, toasted marshmellow, vanilla, s.f. caramel
+, s.f. chocolate, s.v. hazelnut, s.f. vanilla.</span>
+                    </div>
+                
+                
+                        <div class="fruit">
+                        <b>fruit flavor shots</b><br>
+                        <span>apple, blackberry, black currant, blueberry, cherry, grape, lemon, lime, mandarin orange, 
+passion fruit, pomegrante raspberry, strawberry, watermelon.</span>
+                    </div>
+        
+                            
+                             <div class="smoothies">
+                        <b>smoothies</b><br>
+                        <span>banana, mango, mixed berries, peach, pina colada, raspberry.</span>
+                    </div>
+                            
+                   <div class="frappes">
+                        <b>frappes</b><br>
+                        <span>mocha, vanilla latte, coffee, caramel, hazelnut, heath, s.f. mocha.</span>
+                    </div>
+                            
+                             <div class="chai">
+                        <b>chai tea lattes</b><br>
+                        <span>spiced, vanilla, chocolate, raspberry, s.f. vanilla.</span>
+                    </div>
+                        
+                            </div>
+                        </div>
+                        </div>
+		
+        
+	</body>    
+	
+</html>

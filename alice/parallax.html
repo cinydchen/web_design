@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+    <head>
+    <meta charset="utf-8">
+    <title></title>
+		<style>
+			#output{
+				position: fixed; 
+				/* fixed position very important stays there no matter where i scroll*/
+			}
+			body{
+				height: 4000px;
+			}
+		</style>
+		
+		<script>
+			//function parallax
+			//getting the current y position, store variable ypos
+			//it can be found in window.pageoffset
+			
+			function parallax(){
+				ypos = window.pageYOffset;
+				document.getElementById('output').innerHTML = ypos;
+			}
+			
+			
+			
+		</script>
+    </head>
+    <body onScroll="parallax()">
+		<div id="output" ></div>
+    </body>    
+</html>

@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="en">
+    <head>
+    <meta charset="utf-8">
+    <title></title>
+        <link href="https://fonts.googleapis.com/css?family=Sen&display=swap" rel="stylesheet">
+        <style>
+            
+            .page{
+                text-align: center;
+                font-family: 'Sen', sans-serif;
+                font-weight: bold;
+                letter-spacing: 1px;
+                font-size: 12px;
+                color:#707070;
+            }
+            
+            .logo{
+                border-bottom: solid lightgrey 1px;
+                padding: 15px;
+                
+            }
+            
+            .logo img{border:0;}
+            
+            .logotext{
+                font-weight: bold;
+                letter-spacing: 2px;
+                font-size: 14px;
+            }
+            
+            .navtext{
+                padding: 10px;
+                padding-left: 1%;
+                display: inline-block;
+                color:#707070;
+            }
+            
+              .navtext:visited{
+                color: #25B3CD;
+            }
+            
+            .navtext:hover{
+                color: #25B3CD;
+                
+            }
+            .navtext:active{
+                color: #25B3CD;
+            }
+            
+            
+            
+            .bannerimg{
+                background-image: url(banner.png);
+                height: 300px;
+         
+                margin-left: 20%;
+                width: 60%;
+                margin-top: 20px;
+                border-bottom: solid darkgrey 5px;
+                border-top: solid #25B3CD 5px;
+				background-position: -150px -100px
+				
+                
+            }
+            
+            
+            
+          .nav{
+			  font-size: px;
+			}
+            
+
+            
+            .left{
+                width: 23%;
+                display: inline-block;
+                text-align: left;
+                border-right: solid lightgrey 2px;
+                padding-right: 7%;
+                margin-left: 21%;
+                vertical-align: middle;
+        
+                
+            }
+            .right{
+                display: inline-block;
+                padding-left: 7%;
+                text-align: center;
+                width: 17%;
+                vertical-align: middle;
+                
+                
+            }
+            
+            .info{
+                text-align: left;
+                padding-top: 50px;
+                
+            }
+            
+            b{
+                font-size: 19px;
+                padding-left: 10px;
+                padding-bottom: 10px;
+            }
+            
+            span{
+                font-size: 11px;
+            }
+            
+            .button{
+    
+                color:#25B3CD;
+                border: solid #25B3CD 2px;
+                margin-top: 5px;
+                margin-left: 15%;
+                padding: 10px;
+                width: 60%;
+                border-radius: 40px;
+                
+                
+                transition: width 1s, margin-left 1s;
+            }
+ 
+            .button:hover{
+                width: 70%;
+                margin-left: 10%;
+            }
+            
+            a{
+                text-decoration: none;
+            }
+            
+          /*mobile*/
+            
+             @media only screen and (max-width:700px){
+                 
+                 .logo{
+                     border-bottom: 0px;
+                     padding: 0px;
+                     
+                     transition: border-bottom 1s, padding 1s;
+                     
+                 }
+                 .nav{
+                     border-bottom: solid #25B3CD 5px;
+                     margin:none;
+                     transition: border-bottom 1s;
+                 }
+    
+                 
+                    .left{
+                        display:block;
+                        width: 60%;
+                        margin-left: 11%;
+                        border-bottom: solid lightgrey 2px;
+                        padding-bottom: 40px;
+                        padding-left: 40px;
+                        text-align: center;
+                        border-right: none;
+						vertical-align: baseline;
+                      
+                        
+                       
+            }
+                 
+                 .right{
+                     display: block;
+                       width: 100%;
+                     margin-top: 40px;
+                     text-align: center;
+					 vertical-align: baseline;
+					padding-left: 0px;
+                     
+            
+                 }
+              
+            .bannerimg{
+                background-size: 175%;
+                border: none;
+                margin-left: 0px;
+                margin-top: 0px;
+                width: 100%;
+                background-position: -200px;
+                 text-align: center;
+                
+                transition: width 1s, background-size 1s,;
+            
+                
+
+                 }
+                 
+                    .button{
+                        width: 30%;
+                        margin-left: 32%;
+                 }
+                 .button:hover{
+                     width: 35%;
+                 margin-left: 30%;}
+                 }
+            
+        </style>
+    </head>
+    <body>
+        <div class="page">
+        <div class="logo">
+            <img src="LOGO.png" width="50px">
+            <div class="logotext">lorem ipsum</div>
+        </div>
+        
+        <div class="nav">
+            <a href=""><div class="navtext">vitae</div></a>
+            <a href=""><div class="navtext">convallis</div></a>
+            <a href=""><div class="navtext">nisl</div></a>
+        </div>
+        
+        <div class="bannerimg"></div>
+        
+        <div class="info">
+            <div class="left">
+                <h2> Duis ultricies lacus sed turpis?</h2>
+                <span>Cursus turpis massa tincidunt dui ut. At varius vel pharetra vel. Arcu dictum varius duis at. Non odio euismod lacinia at quis. Vulputate mi sit amet mauris commodo quis imperdiet massa tincidunt. Sit amet mauris commodo quis. </span>
+            </div>
+            <div class="right">
+                <img src="location.png" width="10px">
+                <b> lacinia quis, VEL</b>
+                <a href=""><div class="button">interdum velit </div></a>
+            </div>
+            
+        </div>
+            
+            </div>
+    </body>    
+</html>
